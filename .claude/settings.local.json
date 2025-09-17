@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for file in widgets.html typography.html datatables.html colors.html charts.html calendar.html)",
+      "Bash(for:*)",
+      "Bash(do echo \"Processing: $file\")",
+      "Bash(grep:*)",
+      "Bash(do sed -i 's|    <script src=\"\"../js/i18next.js\"\"></script>|    <script src=\"\"../js/i18next.js\"\"></script>\\n    <script src=\"\"../js/logo-switcher.js\"\"></script>|' \"$file\")",
+      "Bash(echo \"Updated: $file\")",
+      "Bash(do sed -i 's|    <script src=\"\"../../js/i18next.js\"\"></script>|    <script src=\"\"../../js/i18next.js\"\"></script>\\n    <script src=\"\"../../js/logo-switcher.js\"\"></script>|' \"$file\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
